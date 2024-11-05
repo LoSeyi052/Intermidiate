@@ -1,0 +1,80 @@
+.acc-page .section-heading {
+  margin-top: 40px;
+  color: #000000;
+  font-size: 2.5rem;
+}
+
+/* acc-layout */
+.acc-layout {
+  padding: 0 10%;
+  display: flex;
+  margin-bottom: 25px;
+  row-gap: 40px;
+}
+.acc-layout #accommodation {
+  padding: 0;
+  width: 80%;
+}
+.acc-layout aside {
+  flex-basis: 20%;
+  padding-right: 2%;
+}
+/* card container */
+#accommodation .container {
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: repeat(auto-fit, minmax(48%, 1fr)); */
+  /* column-gap: 4%; */
+}
+
+#accommodation .card {
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6);
+  transition: 0.3rem;
+
+  &:hover {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+  }
+}
+
+.acc-layout aside h2 {
+  font-size: 1.2rem;
+  color: #cc9b6b;
+  margin-bottom: 15px;
+}
+
+.acc-layout aside select {
+  border: 1.5px solid #c3c3c3;
+}
+
+.acc-layout .form-control {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.1rem;
+  color: #424242;
+  margin-bottom: 10px;
+}
+.acc-layout .felter {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .acc-page .section-heading {
+    font-size: 1.4rem;
+  }
+
+  /* acc-layout */
+
+  .acc-layout {
+    padding: 0 5%;
+    flex-direction: column-reverse;
+  }
+  .acc-layout #accommodation {
+    width: 100%;
+  }
+  .acc-layout aside {
+    flex-basis: 100%;
+  }
+  #accommodation .container {
+    grid-template-columns: 1fr;
+  }
+}

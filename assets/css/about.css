@@ -1,0 +1,32 @@
+/* About us */
+#about-us h2 {
+  color: #1c244b;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+#about-us h3 {
+  color: #c2884f;
+  font-size: 1.5rem;
+}
+#about-us p {
+  font-size: 1.1rem;
+  color: #1c244b;
+}
+.meet-team {
+  display: flex;
+  background-color: #f2f5f7;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.meet-team .col-1 {
+  padding: 10px 5%;
+}
+.meet-team .col-2 {
+  padding: 10px 5%;
+}
+.meet-team .col-2 img {
+  height: 300px;
+  width: 300px;
+}
